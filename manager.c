@@ -77,6 +77,14 @@ void searchProductStar(Product *s, int count){
     printf("\n");
 }
 
+void searchProductNumStar(Product *s, int count) {
+	int scnt = 0;
+	int search = 0;
+	printf("검색할 제품의 별점 갯수는? ");
+	scanf("%d", &search);
+	printf("*****************************\n");
+}
+
 void saveData(Product *s, int count){
     FILE *fp;
     fp = fopen("product.txt", "wt");
