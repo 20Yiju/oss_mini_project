@@ -83,6 +83,16 @@ void searchProductNumStar(Product *s, int count) {
 	printf("검색할 제품의 별점 갯수는? ");
 	scanf("%d", &search);
 	printf("*****************************\n");
+	for(int i = 0; i < count; i++) {
+		if(s[i].weight == -1) {
+			continue;
+		}
+		if(s[i].nstar == search) {
+			printf("%2d" , i+1);
+			readProduct(s[i]);
+			scnt++;
+		}
+	}
 }
 
 void saveData(Product *s, int count){
