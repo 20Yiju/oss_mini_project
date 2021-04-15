@@ -110,7 +110,7 @@ void saveData(Product *s, int count){
     printf("=> 저장되었습니다!:->!\n");
 }
 
-int loadData(product *s) {
+int loadData(Product *s) {
 	int i = 0;
 	FILE *fp;
 	fp = fopen("product.txt", "rt");
