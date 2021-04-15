@@ -120,7 +120,7 @@ int loadData(Product *s) {
 		fscanf(fp, "%d", &s[i].price);
 		fscanf(fp, "%d", &s[i].star);
 		fscanf(fp, "%d", &s[i].nstar);
-		fscanf(fp, "%[^\n]s", &s[i].name);
+		fscanf(fp, "%[^\n]s", s[i].name);
 	}
 	fclose(fp);
 	printf("=> 로딩 성공:-)\n");
